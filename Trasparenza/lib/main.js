@@ -12,7 +12,8 @@ jQuery(document).ready(function($) {
   var currentPage = url.substr(url.lastIndexOf('/') + 1);
 
   $(".father-menu").children("ul").children(".father-menu").each(function(){
-    var currentUrl = $(this).children("a").attr("data-drupal-link-system-path");
+    var currentUrl = $(this).children("a").attr("href");
+    console.log(currentUrl);
     var lastPart = currentUrl.substr(currentUrl.lastIndexOf('/') + 1);
     if (lastPart == currentPage) {
       $(this).addClass("selected");
