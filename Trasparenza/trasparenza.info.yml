@@ -1,0 +1,19 @@
+name: Trasparenza_Theme
+description: Drupal 8 Theme for Trasparenza by Farnedi ICT
+type: theme
+core: 8.x
+libraries:
+  - trasparenza/global-css
+  - trasparenza/global-js
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
+
+regions:
+  logo: "Logo Sito"
+  menu: "Menu a sinistra"
+  search: "Ricerca nel sito"
+  content: "Contenuto della pagina"
+  subMenu: "Sotto menu di sinistra"
+  bottomInfoSite: "Testo sotto il contenuto"
+  bricioleDiPane: "Briciole di pane"

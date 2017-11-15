@@ -1,0 +1,21 @@
+{% if context.list_style %}
+  {%- set attributes = attributes.addClass('item-list__' ~ context.list_style) %}
+{% endif %}
+{% if items or empty %}
+  {%- if title is not empty -%}
+  <div class="full-space big-no-result" >
+    <h3 class="titoli-pagine" >{{ title }}</h3>
+  </div>
+  {%- endif -%}
+  {%- if items -%}
+    <{{ list_type }}{{ attributes }}>
+      {%- for item in items -%}
+        <li class="black-text Testi-pagine" {{ item.attributes }}>{{ item.value }}</li>
+      {%- endfor -%}
+    </{{ list_type }}>
+  {%- else -%}
+    <div class="no-result" >
+      {{- empty -}}
+    </div>
+  {%- endif -%}
+{%- endif %}

@@ -1,0 +1,7 @@
+<div class="search-container{% if configuration["label"] == "align-self-end" %} align-self-end {% endif %}" {{ attributes }}>
+  {{ title_prefix }}
+  {{ title_suffix }}
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</div>

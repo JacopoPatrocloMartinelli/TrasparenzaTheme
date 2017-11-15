@@ -1,0 +1,313 @@
+/* =======================================================================
+## ++ Globals
+========================================================================== */
+html{
+    font-size: 100%;
+}
+
+body{
+    -webkit-font-smoothing: antialiased;
+    background-color: $terza-colonna-sfondo;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.content-end {
+  align-content: stretch;
+}
+
+.noWrap {
+  flex-wrap: nowrap;
+}
+
+.left {
+  background-color: #2b2b2a;
+  width: 328px;
+  order: -1;
+}
+
+.content{
+  width: 700px;
+  order: 1;
+  background-color: white;
+}
+
+.border-up{
+  border-top: 8px solid $barra-orange-sopra;
+}
+
+.logo-container{
+  background-color: $barra-orange-sopra;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 2px solid $white;
+}
+
+.logo-25 {
+  width: 100%;
+  height: auto;
+}
+
+.menu-side-container{
+  background-color: $sfondo-menu;
+  width: 100%;
+  padding-left: 8px;
+}
+
+.is-a-link:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.menu{
+  padding-bottom: 20px;
+  color: $white;
+}
+
+.father-menu{
+  padding-top: 5px;
+  padding-left: 30px;
+}
+
+.small_arrow {
+  padding-right: 5px;
+}
+
+.search-container {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.last_elem {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.full-space{
+  width: 100%;
+}
+
+.small-height-container {
+  height: 60px;
+}
+
+.get-on-top{
+  align-self: flex-start;
+}
+
+.powered-by {
+  padding: 20px;
+}
+
+.info-site{
+  width: 100%;
+  align-self: flex-end;
+}
+
+.selected{
+  background-color: rgba(216, 216, 216, 0.3);
+}
+
+.footer {
+  width: 100%;
+  opacity: 0.8;
+  font-family: 'SourceSansPro-SemiBold' , sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.43;
+  text-align: center;
+  color: $sfondo-menu;
+}
+
+.black-text > a{
+  color: $sfondo-menu;
+  font-size: 10px;
+}
+
+.black-text-file > a{
+  color: $sfondo-menu;
+}
+
+.black-text > div > h3 > a{
+  color: $sfondo-menu;
+}
+
+.content-center {
+  align-items: center;
+}
+
+.spacing {
+  padding: 10px;
+}
+
+.icon-size {
+  height: 32px;
+  width: 31px;
+  margin-right: 10px;
+}
+
+.Line {
+  width: 100%;
+  height: 1px;
+  background-color: $colore-linea;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.breadcrumb-container {
+  border-bottom: 1px solid $colore-linea;
+  width: 100%;
+  height: 40px;
+}
+
+.flex-start-self {
+  align-self: flex-start;
+}
+
+.padding-left {
+  padding-left: 20px;
+}
+
+.js-form-type-search {
+  min-width: 60%;
+}
+
+.form-submit{
+  height: 32px;
+}
+
+.js-form-submit {
+  background-color: #2b2b2a;
+  color: $white;
+  border: none;
+  margin-left: 10px;
+}
+
+.js-form-submit:hover{
+  background-color: $barra-orange-sopra;
+  cursor: pointer;
+}
+
+input.form-search {
+  width: 100%;
+  padding: 0px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  -webkit-appearance: none;
+  height: 32px;
+  border: 1px solid $sfondo-menu;
+}
+
+.search-help-link {
+  display: none;
+}
+
+.search-advanced {
+  display: none;
+}
+
+.search-container > h2 {
+  padding: 30px;
+  font-size: 20px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.title-search {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.container-result-search{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #E8E8E8;
+}
+
+.container-result-search:hover{
+  cursor: pointer;
+}
+
+.big-no-result {
+  text-align: center;
+}
+
+.the-footer{
+   height:10%;
+   width:100%;
+}
+
+.no-result{
+  width: 100%;
+  padding: 30px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.padding-h2 > h2 {
+  visibility: hidden;
+}
+
+.error{
+  width: 100%;
+  color: red;
+  text-align: center;
+}
+
+.js-form-type-vertical-tabs {
+  visibility: hidden;
+}
+/* =======================================================================
+## ++ Cleafix
+========================================================================== */
+
+/* float clearing for IE6 */
+* html .clearfix{
+ height: 1%;
+ overflow: visible;
+}
+
+/* float clearing for IE7 */
+*+html .clearfix{
+ min-height: 1%;
+}
+
+/* float clearing for everyone else */
+.clearfix:after{
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+ font-size: 0;
+}
+
+.clr{clear:both;}
