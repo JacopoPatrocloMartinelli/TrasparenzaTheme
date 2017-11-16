@@ -11,7 +11,7 @@
   <nav class="breadcrumb-container flex-container content-center full-space" role="navigation" aria-labelledby="system-breadcrumb">
     <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
     {% for item in breadcrumb %}
-      <div class="black-text">
+      <div class="black-text flex-container">
         {% if item.url %}
           {% if item.text == "Home"%}
             <a href="{{ item.url }}"><img style="height:18px;width:18px;margin-right:5px;" src="/themes/Trasparenza/images/home.png" ></a>
@@ -20,7 +20,7 @@
           <img style="height:4.9px;width:7px;margin-right:5px;margin-bottom:2px;" src="/themes/Trasparenza/images/arrow-dark.png" ><a href="{{ item.url }}">{{ item.text }}</a>
           {% endif %}
         {% else %}
-          {{ item.text }}
+          <img style="width:7px;height:4.9px;margin-top:6px;margin-right:5px;" src="/themes/Trasparenza/images/arrow-dark.png" ><span>{{ item.text }}</span>
         {% endif %}
       </div>
     {% endfor %}
