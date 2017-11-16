@@ -31,6 +31,10 @@ p{
   color: #2c2c2c;
 }
 
+ul{
+  list-style: circle;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -109,16 +113,24 @@ p{
 }
 
 a {
-  color: $white;
+  color: $sfondo-menu;
   text-decoration: none;
 }
 
 a:hover{
+  text-decoration: underline;
 }
 
 .menu{
   padding-bottom: 20px;
+}
+
+.father-menu > a {
   color: $white;
+}
+
+.father-menu > a:hover{
+  text-decoration: none;
 }
 
 .father-menu{
