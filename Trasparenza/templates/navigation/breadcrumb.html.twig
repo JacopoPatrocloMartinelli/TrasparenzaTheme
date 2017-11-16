@@ -20,7 +20,11 @@
           <img style="width:7px;margin-right:5px;height:4.9px;margin-top:4px;" src="/themes/Trasparenza/images/arrow-dark.png" ><a class="breadcrumb" href="{{ item.url }}">{{ item.text }}</a>
           {% endif %}
         {% else %}
-          <img style="width:7px;margin-right:5px;margin-left:5px;height:4.9px;margin-top:4px;" src="/themes/Trasparenza/images/arrow-dark.png" ><span class="breadcrumb-attuale" >{{ item.text }}</span>
+          {% if item.text != ""%}
+            <img style="width:7px;margin-right:5px;margin-left:5px;height:4.9px;margin-top:4px;" src="/themes/Trasparenza/images/arrow-dark.png" ><span class="breadcrumb-attuale" >{{ item.text }}</span>
+          {% else %}
+            <a href="/"><img style="height:18px;width:18px;margin-right:5px;margin-top:-1px;" src="/themes/Trasparenza/images/home.png" ></a>
+          {% endif %}
         {% endif %}
       </div>
     {% endfor %}
