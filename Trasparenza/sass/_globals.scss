@@ -102,12 +102,10 @@ p{
 .menu-side-container{
   background-color: $sfondo-menu;
   width: 100%;
-  padding-left: 8px;
 }
 
 .is-a-link:hover{
   cursor: pointer;
-  text-decoration: underline;
 }
 
 a {
@@ -116,7 +114,6 @@ a {
 }
 
 a:hover{
-  text-decoration: underline;
 }
 
 .menu{
@@ -126,7 +123,16 @@ a:hover{
 
 .father-menu{
   padding-top: 5px;
-  padding-left: 30px;
+  margin-left: -30px;
+  padding-left: 60px;
+}
+
+.father-menu:hover{
+  background-color: rgba(216, 216, 216, 0.3);
+}
+
+.father-menu-with-secected-child{
+  background-color: rgba(216, 216, 216, 0.3);
 }
 
 .small_arrow {
@@ -172,7 +178,7 @@ a:hover{
 }
 
 .selected{
-  background-color: rgba(216, 216, 216, 0.3);
+  background-color: $menu-selezionato;
 }
 
 .footer {
@@ -248,6 +254,7 @@ a:hover{
   color: $white;
   border: none;
   margin-left: 10px;
+  text-transform: uppercase;
 }
 
 .js-form-submit:hover{
