@@ -14,13 +14,13 @@
       <div class="black-text flex-container">
         {% if item.url %}
           {% if item.text == "Home"%}
-            <a href="{{ item.url }}"><img style="height:18px;width:18px;margin-right:5px;" src="/themes/Trasparenza/images/home.png" ></a>
+            <a href="{{ item.url }}"><img style="height:18px;width:18px;margin-right:5px;margin-top:-1px;" src="/themes/Trasparenza/images/home.png" ></a>
           {% endif %}
           {% if item.text != "Node" and item.text != "Home"%}
-          <img style="height:4.9px;width:7px;margin-right:5px;margin-bottom:2px;" src="/themes/Trasparenza/images/arrow-dark.png" ><a href="{{ item.url }}">{{ item.text }}</a>
+          <img style="width:7px;margin-right:5px;height:4.9px;margin-top:4px;" src="/themes/Trasparenza/images/arrow-dark.png" ><a class="breadcrumb" href="{{ item.url }}">{{ item.text }}</a>
           {% endif %}
         {% else %}
-          <img style="width:7px;height:4.9px;margin-top:5px;margin-right:5px;" src="/themes/Trasparenza/images/arrow-dark.png" ><span class="breadcrumb-attuale" >{{ item.text }}</span>
+          <img style="width:7px;margin-right:5px;margin-left:5px;height:4.9px;margin-top:4px;" src="/themes/Trasparenza/images/arrow-dark.png" ><span class="breadcrumb-attuale" >{{ item.text }}</span>
         {% endif %}
       </div>
     {% endfor %}

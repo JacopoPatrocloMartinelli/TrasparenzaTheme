@@ -55,15 +55,14 @@
 }
 
 .breadcrumb {
-  font-family: 'SourceSansPro', sans-serif;
-  font-size: 10.2px;
-  letter-spacing: 0.6px;
-  text-align: left;
-  color: $sfondo-menu;
+  font-family: 'SourceSansPro', sans-serif !important;
+  font-size: 13.2px !important;
+  letter-spacing: 0.6px !important;
+  color: $sfondo-menu !important;
 }
 
 .breadcrumb-attuale {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
   font-size: 13.2px;
   letter-spacing: 0.6px;
   color: $breadcrumb-attuale;
