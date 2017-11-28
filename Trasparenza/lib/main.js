@@ -5,14 +5,18 @@ jQuery(document).ready(function($) {
 
   $(".father-menu").children("ul").children(".child").slideToggle(0,function() {});
 
-  $(".father-menu").click(function(){
-    $(this).children("ul").children(".child").slideToggle(200,function(){});
-    if ( $(this).children('img').hasClass('is_rotate') ){
-      $(this).children('img').removeClass('is_rotate');
-      AnimateToNormal($(this).children('img'));
-    }else {
-      $(this).children('img').addClass('is_rotate');
-      AnimateRotate(180,$(this).children('img'));
+  $(".father-menu").click(function(e){
+    if (e.target !== this) {
+      return;
+    }else{
+      $(this).children("ul").children(".child").slideToggle(200,function(){});
+      if ( $(this).children('img').hasClass('is_rotate') ){
+        $(this).children('img').removeClass('is_rotate');
+        AnimateToNormal($(this).children('img'));
+      }else {
+        $(this).children('img').addClass('is_rotate');
+        AnimateRotate(180,$(this).children('img'));
+      }
     }
   })
 
