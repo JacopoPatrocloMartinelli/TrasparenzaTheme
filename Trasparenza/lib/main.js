@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
   $(".father-menu").children("ul").children(".child").slideToggle(0,function() {});
 
   $(".father-menu").click(function(e){
-    if (e.target !== this) {
+    if (e.target !== this && !($(e.target).hasClass("pressable")) ) {
       return;
     }else{
       $(this).children("ul").children(".child").slideToggle(200,function(){});

@@ -41,8 +41,8 @@
       <li class="father-menu" {{ item.attributes }}>
       {% endif %}
         {% if item.below %}
-          <img class="small_arrow" style="margin-bottom:2px;" src="/themes/Trasparenza/images/arrow-down.png">
-          <a data-drupal-link-system-path="<front>" class="is-active is-a-link">{{ item.title }}</a>
+          <img class="small_arrow pressable" style="margin-bottom:2px;" src="/themes/Trasparenza/images/arrow-down.png">
+          <a data-drupal-link-system-path="<front>" class="is-active is-a-link pressable">{{ item.title }}</a>
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% else %}
           {% if menu_level > 0 %}
