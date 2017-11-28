@@ -131,22 +131,45 @@ a:hover{
   list-style: none;
 }
 
+.child > a {
+  color: $white;
+}
+
 .father-menu > a {
   color: $white;
+}
+
+.child > a:hover{
+  text-decoration: none;
 }
 
 .father-menu > a:hover{
   text-decoration: none;
 }
 
-.father-menu{
-  padding-top: 5px;
+.child {
+  padding-top: 8px;
   margin-left: -70px;
   padding-left: 90px;
+  line-height: 23px;
+}
+
+.father-menu{
+  padding-top: 8px;
+  margin-left: -70px;
+  padding-left: 90px;
+  line-height: 23px;
+}
+
+.child:hover{
+  background-color: rgba(216, 216, 216, 0.3);
+  cursor: pointer;
+
 }
 
 .father-menu:hover{
   background-color: rgba(216, 216, 216, 0.3);
+  cursor: pointer;
 }
 
 .father-menu-with-secected-child{
@@ -268,7 +291,7 @@ a:hover{
 }
 
 .js-form-submit {
-  background-color: #2b2b2a;
+  background-color: $barra-orange-sopra;
   color: $white;
   border: none;
   margin-left: 10px;
@@ -276,7 +299,7 @@ a:hover{
 }
 
 .js-form-submit:hover{
-  background-color: $barra-orange-sopra;
+  background-color: rgba(216, 216, 216, 0.3);
   cursor: pointer;
 }
 

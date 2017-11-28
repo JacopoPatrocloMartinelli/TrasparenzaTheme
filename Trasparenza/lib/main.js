@@ -3,9 +3,10 @@ jQuery(document).ready(function($) {
   $(".search-container").children("form").children("div").children(".js-form-submit").attr('value',"Search");
   $(".search-container").children("form").children("div").children(".js-form-submit").addClass('fa fa-search');
 
-  $(".father-menu").children("ul").children(".father-menu").slideToggle(0,function() {});
+  $(".father-menu").children("ul").children(".child").slideToggle(0,function() {});
+
   $(".father-menu").click(function(){
-    $(this).children("ul").children(".father-menu").slideToggle(200,function(){});
+    $(this).children("ul").children(".child").slideToggle(200,function(){});
     if ( $(this).children('img').hasClass('is_rotate') ){
       $(this).children('img').removeClass('is_rotate');
       AnimateToNormal($(this).children('img'));
@@ -15,10 +16,14 @@ jQuery(document).ready(function($) {
     }
   })
 
+  $('.child').click(function() {
+    window.location.href = $(this).children('a').attr('href');
+  });
+
   var url = document.URL;
   var currentPage = url.substr(url.lastIndexOf('/') + 1);
 
-  $(".father-menu").children("ul").children(".father-menu").each(function(){
+  $(".father-menu").children("ul").children(".child").each(function(){
     var currentUrl = $(this).children("a").attr("href");
     var lastPart = currentUrl.substr(currentUrl.lastIndexOf('/') + 1);
     if (lastPart == currentPage) {
