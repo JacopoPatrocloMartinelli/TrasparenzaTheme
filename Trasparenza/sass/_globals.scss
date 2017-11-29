@@ -29,11 +29,21 @@ p{
   font-size: 15px;
   letter-spacing: 0.7px;
   color: #2c2c2c;
+  line-height: 20px;
 }
 
 ul{
   margin-left: 20px;
   list-style: circle;
+}
+
+blockquote{
+  margin: 10px;
+  margin-left: 20px;
+}
+
+em{
+  line-height: 20px;
 }
 
 .flex-container {
@@ -140,6 +150,11 @@ a:hover{
   padding-top: 8px;
 }
 
+.father-menu > div > a {
+  color: $white;
+  padding-top: 8px;
+}
+
 .father-menu > ul {
   padding-top: 8px;
 }
@@ -149,6 +164,10 @@ a:hover{
 }
 
 .father-menu > a:hover{
+  text-decoration: none;
+}
+
+.father-menu > div > a:hover{
   text-decoration: none;
 }
 
@@ -217,6 +236,7 @@ a:hover{
 
 .powered-by {
   padding: 20px;
+  padding-left: 59px !important;
 }
 
 .info-site{

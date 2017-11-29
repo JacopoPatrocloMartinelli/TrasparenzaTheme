@@ -46,8 +46,10 @@
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         {% else %}
           {% if menu_level > 0 %}
+            <a href="{{ item.url }}" data-drupal-link-system-path="{{ item.url }}">{{ item.title }}</a>
+          {% else %}
+            <div style="padding-bottom:8px;padding-left: 19px;"><a href="{{ item.url }}" data-drupal-link-system-path="{{ item.url }}">{{ item.title }}</a></div>
           {% endif %}
-          {{ link(item.title, item.url) }}
         {% endif %}
       </li>
     {% endfor %}
